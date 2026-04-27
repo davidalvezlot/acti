@@ -153,16 +153,7 @@ async function cargar() {
 
 cargar();
 
-// ▶ INICIAR
-window.iniciar = async () => {
 
-  await updateDoc(doc(db, "actividades", actId), {
-    estado: "en_proceso"
-  });
-
-  alert("Actividad iniciada 🚀");
-  cargar();
-};
 
 // ✅ FINALIZAR
 window.finalizar = async () => {
